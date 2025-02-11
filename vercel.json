@@ -1,20 +1,27 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "TextSum/wsgi.py",
-        "use": "@vercel/python",
-        "config": {
-          "maxLambdaSize": "15mb",
-          "runtime": "python3.9"
-        }
+  "version": 2,
+  "builds": [
+    {
+      "src": "TextSum/TextSum/wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.9"
       }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "TextSum/wsgi.py"
-      }
-    ]
-  }
-  
+    },
+    {
+      "src": "TextSum/templates/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/templates/(.*)",
+      "dest": "/templates/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "TextSum/wsgi.py"
+    }
+  ]
+}
