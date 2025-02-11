@@ -1,0 +1,18 @@
+textsum(desktop)
+	texts(venv)/
+		Include/
+		Lib/
+		Scripts/
+		pyvenev.vfg
+	TextSum/
+		texts/
+			__pycache__/
+			migrations/
+			templates/
+			__init__.py ...
+		TextSum/
+			__pycache__/
+			__init__.py ...
+		db.sqlite3
+		manage.py
+	requirements.txt

@@ -1,0 +1,13 @@
+texts/
+texts/Include/ 
+texts/Lib/ 
+texts/Scripts/ 
+texts/pyvenv.cfg 
+TextSum/texts/__pycache__/ 
+TextSum/texts/migrations/ 
+TextSum/TextSum/__pycache__/ 
+*.pyc 
+*.pyo 
+__pycache__/ 
+db.sqlite3 
+staticfiles/ 
